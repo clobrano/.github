@@ -11,7 +11,7 @@ permissions:
   contents: write
 
 jobs:
-  job_a:
+  reusable:
     name: Run Job
     runs-on: ubuntu-22.04
     steps:
