@@ -2,7 +2,7 @@ name: test workflow
 on:
   workflow_call:
     inputs:
-      version:
+      name:
         description: "Job name"
         required: true
         type: string
@@ -15,4 +15,4 @@ jobs:
     name: Run Job
     runs-on: ubuntu-22.04
     steps:
-      - run: echo "JOB ${{inputs.description}}"
+      - run: echo "JOB ${{inputs.name}}"
